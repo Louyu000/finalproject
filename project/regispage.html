@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>註冊</title>
+    <style type="text/css">
+    
+        body {
+            background-image: url("login0.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        body > div {
+            top:200px;
+            width: 550px;
+            height: 250px;
+            background-color: white;
+            border: rgb(209, 0, 164) solid 8px;
+            border-radius: 8px; /*圆角*/
+            margin: 20px auto;
+            text-align: center;
+            position: relative;
+        }
+ 
+        .left {
+            float: left;
+            width: 50%;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+ 
+        .left p:last-child {
+            font-size: 20px;
+            color: gray;
+        }
+ 
+        tr{
+            margin-bottom: 5px;
+        }
+ 
+        .mid {
+            font-size: 15px;
+            float:left;
+            width: 50%;
+            margin-left: 145px;
+            margin-top: 10px;
+        }
+ 
+        .table {
+            margin-top: 25px;
+            float: left;
+            font-family:Verdana;
+        }
+ 
+        .t-left {
+            text-align: left;
+        }
+ 
+        input[type="text"], input[type="date"], input[type="password"], input[type="accountnumber"], input[type="email"] {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 5px;
+            padding-right: 10px;
+            border-radius: 4px; /*圆角*/
+            border: gray solid 1px;
+            margin-left: 30px; /*指定左边距，调节左边距的距离*/
+        }
+      
+        img{
+            background-attachment: fixed;
+            width:1520px ;
+            height:733px ;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div>
+        <div class="mid">
+            <div class="table">
+                <form action="registration_page.php" method="POST">
+                    <table>
+                        <tr>
+                            <td class="t-left">
+                                <lable>帳號</lable>
+                            </td>
+                            <td class="t-right"><input type="accountnumber" name="user_name" id="accountnumber" placeholder="請輸入帳號">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t-left">
+                                <lable>密碼</lable>
+                            </td>
+                            <td class="t-right"><input type="password" name="user_password" id="password" placeholder="請輸入密碼"></td>
+                        </tr>
+                        <tr>
+                            <td class="t-left">E-mail</td>
+                            <td class="t-right">
+                                <input type="email" name="user_email" placeholder="XXX@gmail.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t-left">生日</td>
+                            <td class="t-right"><input type="date" name="user_birthday"></td>
+                        </tr>
+                        <tr align="center">
+                            <td colspan="2">
+                                <input type="submit" class="submit" value="申請註冊"></input>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td colspan="2">
+                                <p>已有帳號？<a href="login_page.php">立即登錄</a></p>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+     
+            </div>
+        </div>
+    </div>
+     
+    </body>
+</html>
